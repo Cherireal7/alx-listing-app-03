@@ -12,15 +12,12 @@ export default function BookingPage() {
   };
 
   return (
-    <div className="container mx-auto p-6 space-y-12">
-      {/* Booking Form and Order Summary */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+    <div className="container mx-auto p-6">
+      <div className="grid grid-cols-2 gap-6">
         <BookingForm />
         <OrderSummary bookingDetails={bookingDetails} />
+        <CancellationPolicy />
       </div>
-
-      {/* Cancellation Policy and Ground Rules */}
-      <CancellationPolicy />
     </div>
   );
 }
